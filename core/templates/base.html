@@ -1,0 +1,57 @@
+<!-- takes input to home function from views.py <== urls.py -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- loading bootstrap4 django-bootstrap4==2.3.1 module-->
+    {% load bootstrap4 %}
+    <!-- implementing bootstrap css inside <head>-->
+    {% bootstrap_css %}
+    <!-- implementing js with jquery inside <head>-->
+    {% bootstrap_javascript jquery='full' %}
+
+    <!-- create block name head and end it-->
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <!-- Bootstrap 5 $ Navbar $ from "https://getbootstrap.com/docs/5.0/components/navbar/"-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="/">Fast-Chain</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courier</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+     <!-- create block name content and end it 
+        which will display code from home.html -- block content-->
+     {% block content %}{% endblock %}
+
+
+    <footer class="text-center mt-5 mb-5">
+      &copy; iamabhishekt.com
+    </footer>
+  </body>
+</html>

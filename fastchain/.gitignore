@@ -1,0 +1,7 @@
+#ignore all these files white commiting
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlit3
+media
