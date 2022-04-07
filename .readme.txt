@@ -29,5 +29,7 @@ for django add new app there
 
 commit to github easily
 
-1.pip freeze > requirement.txt #create requirement.txt
-
+1. git init # To initialize empty git repo
+2. pip freeze > requirement.txt # Create requirement.txt
+3. sign into github inside vscode
+4. publish it (private/public repo)

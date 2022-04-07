@@ -1,4 +1,4 @@
-#ignore all these files white commiting
+# Ignore all these files white commiting
 *.log
 *.pot
 *.pyc
